@@ -1,0 +1,342 @@
+﻿* {
+    font-family: 'gantari', arial, sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 40px;
+    color: white;
+}
+
+/*Heading*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px;
+}
+
+.dropbtn {
+    background-color: #95A5A6;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    border: solid 1px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #95A5A6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition:0.8s;
+    }
+
+        .dropdown-content a:hover {
+            border: 0.5px solid white;
+            border-radius: 10px;
+            color: white;
+            background: black;
+            box-shadow: 10px 5px 5px grey;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+    border: solid white 1px;
+    color:white;
+    transition-duration:1s;
+}
+
+
+span a {
+    border: 1px solid;
+    color: black;
+    font-size: 40px;
+    background: #95A5A6;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+    span a:hover {
+        border: 0.5px solid white;
+        border-radius: 20px;
+        color: white;
+        background: #95A5A6;
+    }
+
+
+
+/*Secret*/
+.secret {
+    color: black;
+    background-color: black;
+    transition: 0.5s;
+    border: solid 1px black;
+    margin: 15px;
+}
+
+    .secret:hover {
+        color: white;
+        background: #b9241a;
+        box-shadow: 5px 3px 3px white;
+        margin: 15px;
+        transition-duration: 30s;
+        cursor: auto;
+    }
+
+/*Table*/
+table {
+    border: 0.5px solid grey;
+    border-radius: 10px;
+}
+
+th {
+    background: #95A5A6;
+}
+
+tr {
+    background: white;
+}
+
+th,
+td {
+    padding: 20px;
+    line-height: 30px;
+}
+
+.table_head {
+    display: flex;
+    justify-content:center;
+}
+
+
+.grey {
+    background: lightgrey;
+}
+
+.flexbox {
+    border: 0.5px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+  .flexbox:visited {
+    color: white;
+}
+
+a {
+    transition: 0.2s;
+    text-decoration: none;
+    padding: 3px;
+    color:black;
+}
+
+   table a:visited {
+        color: #000000;
+    }
+
+table a:hover, foot a:hover {
+    border: 0.5px solid white;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    box-shadow: 10px 5px 5px grey;
+}
+
+
+
+/*More*/
+.more{
+ margin:100px;
+} 
+
+.container {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:50px;
+}
+
+.card {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    height: 200px;
+    width: 200px;
+    background-color: #95A5A6;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+    .card:not(:first-child) {
+        margin-left: -50px;
+    }
+
+    .card:hover {
+        transform: translateY(-20px);
+        transition: 0.4s ease-out;
+    }
+
+        .card:hover ~ .card {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+        }
+
+
+
+
+.bar {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: rgb(255, 255, 255);
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+}
+
+i {
+    margin: 10px 70px;
+    font-size: 60px;
+}
+
+.btnmore {
+    border-radius: 10px;
+    color: white;
+    background: #000;
+}
+    .btnmore:hover {
+        border: solid white 2px;
+        padding: 7px;
+        cursor: pointer;
+        box-shadow: 10px 5px 5px grey;
+    }
+
+.circle {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 60px);
+}
+
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+svg {
+    fill: #17141d;
+    stroke-width: 2px;
+}
+
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #95A5A6;
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(128, 128, 128);
+    }
+
+foot p, foot a {
+    text-align: center;
+    background-color: #95A5A6;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+/*
+.card{
+  border: solid red 1px;
+  transition: margin-left 200ms;
+  flex:1;
+  
+ 
+ 
+}
+
+.card:hover+card{
+  margin-left:1em;
+}
+
+.card_box{
+  background: white;
+    display: flex;
+}*/

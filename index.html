@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CheatSheets for HTML/CSS</title>
+    <script src="https://kit.fontawesome.com/ecd70eac4a.js" crossorigin="anonymous"></script>
+    <link href="D:\ALL\Codecacademy\git\Table\style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div><h1><span><a href="https://www.geeksforgeeks.org/css-cheat-sheet-a-basic-guide-to-css/">Cheat</a></span>Sheet</h1></div>
+        <div class="dropdown">
+            <button class="dropbtn">Map</button>
+            <div class="dropdown-content">
+                <a href="#table">Table </a>
+                <a href="#">About </a>
+                <a href="#more">More </a>
+            </div>
+        </div>
+    </header>
+    <div class="table">
+        <div class="table_head">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="secret
+        "><p>PUSH</p></a>
+            <h1> CSS FlexBox</h1>
+        </div>
+        <table>
+            <thead>
+            <th colspan="3">CSS <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="flexbox">FlexBox</a> Tags </th>
+            </thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Comands</th>
+                <th scope="col">Description</th>
+            </tr>
+            <tbody>
+                <tr class="grey">
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/display">display</a></td>
+                    <td>flex | inline-flex</td>
+                    <td>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-direction">flex-direction</a></td>
+                    <td> row | reverse-row | column | reverse-column </td>
+                    <td>Defining the direction flex items are placed in the flex container.</td>
+                <tr class="grey">
+                    <td> <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-wrap">flex-wrap</a></td>
+                    <td>nowrap | wrap | wrap-reverse</td>
+                    <td>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</td>
+                </tr>
+                <tr>
+                    <td> <a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-flow">flex-flow</a></td>
+                    <td>row | reverse-row | column | reverse-column / nowrap | wrap | wrap-reverse </td>
+                    <td>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.</td>
+                </tr>
+                <tr class="grey">
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow">flex-grow </a></td>
+                    <td> numbers ( 1-4)</td>
+                    <td>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-shrink">flex-shrink</a></td>
+                    <td>numbers ( 1-4)</td>
+                    <td>This defines the ability for a flex item to shrink if necessary.</td>
+                </tr>
+                <tr class="grey">
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/flex-basis">flex-basis</a></td>
+                    <td> 0 | auto;</td>
+                    <td>This defines the default size of an element before the remaining space is distributed.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/justify-content">justify-content</a></td>
+                    <td>flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right;</td>
+                    <td>This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</td>
+                </tr>
+                <tr class="grey">
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/align-items">align-items</a></td>
+                    <td>stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end;</td>
+                    <td>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).</td>
+                </tr>
+                <tr>
+                    <td><a href="https://developer.mozilla.org/ru/docs/Web/CSS/align-content">align-content</a></td>
+                    <td> flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline;</td>
+                    <td>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.</td>
+                </tr>
+                <tr class="grey">
+                    <td> <a href="https://developer.mozilla.org/ru/docs/Web/CSS/gap">gap, row-gap, column-gap</a></td>
+                    <td>gap, row-gap, column-gap</td>
+                    <td>The gap property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- little redesign of example table
+        <div class="table">
+          <table >
+            <h2> HTML table</h2>
+                 <thead>
+                <th colspan="3";> Table Tags </th>
+                </thead>
+            <thead>
+            <tr>
+              <th scope=col>Tag</th>
+               <th scope=col>Name</th>
+                <th scope=col>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><span class="code"> < table > </span> </td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables.</td>
+              </tr>
+             <tr>
+                <td>< thead > </td>
+                <td>Table heading</td>
+                <td>The set of rows defining the column headers in a table.
+                </td>
+              </tr>
+                <tr>
+                <td>< th ></td>
+                <td>Table heading</td>
+                <td>Are used in < thead > to input data instead of < td ></td>
+              </tr>
+
+              </tr>
+               <tr>
+                <td>< tbody ></td>
+                <td>Table body</td>
+                <td>The set of rows containing actual table data.</td>
+              </tr>
+
+                <tr>
+                <td>< tr ></td>
+                <td>Table row</td>
+                <td>The table row container.</td>
+              </tr>
+
+                <tr>
+                <td>< td ></td>
+                <td>Table data</td>
+                <td>Are used to input data</td>
+              </tr>
+
+                <tr>
+                <td>< tfoot ></td>
+                <td>Table foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+              </tr>
+
+              <thead>
+                <th colspan="3">Table atributes</th>
+                </thead>
+
+            <thead>
+            <tr>
+              <th scope=col>Tag</th>
+               <th scope=col>Name</th>
+                <th scope=col>Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><span class="code"> colspan </span> </td>
+                <td>Column Span</td>
+                <td>  Defines how many columns a < td > element should span.</td>
+              </tr>
+             <tr>
+                <td> rowspan  </td>
+                <td>Row Span</td>
+                <td>  Defines how many row a < td > element should span.
+                </td>
+           </tbody>
+
+      </table>
+    </div>
+          -->
+    <!--
+      <h1>Box Properties</h1>
+      <div class="cards">
+      <div class="card-left">
+        <h3>Margin</h3>
+        <p>It sets the margin as top, left, bottom, or right by specifying length or percentage.</p>
+      </div>
+      <div class="card-left">
+        <h3>Padding</h3>
+        <p> It describes the amount of space between the border and the content of the selector.</p>
+      </div>
+      <div class="card-left">
+        <h3>Border</h3>
+        <p> It sets the element’s border width by specifying border or top, right, bottom or left border. It is also used to set the style, and color of an element’s border.</p>
+      </div>
+      <div class="card-left">
+        <h3>Width</h3>
+        <p>It sets an element’s width as a length, a percentage, or an auto.</p>
+      </div>
+      <div class="card">
+        <h3>Height</h3>
+        <p> It sets an element’s height as a length, a percentage, or as auto.</p>
+      </div>
+    </div>
+    -->
+    <div class="more">
+        <h1 id="more">More here </h1>
+        <div class="container">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <a href="https://us.niemvuilaptrinh.com/article/42-card-effects-css-for-websites" class="src-a"><button class="btnmore">Codecademy</button></a>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <a href="https://developer.mozilla.org/en-US/" class="src-a"><button class="btnmore">MDN</button></a>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://developer.mozilla.org/en-US/" class="src-a"><button class="btnmore">Github</button></a>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-stack-overflow"></i>
+                <a href="https://developer.mozilla.org/en-US/" class="src-a"><button class="btnmore">Stakoverflow</button></a>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <foot>
+        <div>
+            <p>Made by <a href="https://github.com/ForestDuck">ForestDuck</a> </p>
+            <p style="font-size:10px;">2022</p>
+        </div>
+    </foot>
+</body>
+
+</html>
